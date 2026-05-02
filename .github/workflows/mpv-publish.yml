@@ -20,7 +20,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Build documentation
-        uses: AlexAdiaconitei/docs-manager/packages/publisher-action@main
+        uses: ./.github/actions/mpv-publisher
         with:
           build-id: ${{ inputs.build_id }}
           publication-config: .mpv/publication.json
