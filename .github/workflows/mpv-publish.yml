@@ -12,19 +12,18 @@ permissions:
   pages: write
   id-token: write
 
-environment:
-  name: github-pages
-  url: ${{ steps.deployment.outputs.page_url }}
-
 jobs:
   publish:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Checkout site
         uses: actions/checkout@v4
 
       - name: Build documentation
-        uses: OWNER/mpv-dashboard/packages/publisher-action@v0.1.0
+        uses: AlexAdiaconitei/docs-manager/packages/publisher-action@main
         with:
           build-id: ${{ inputs.build_id }}
           publication-config: .mpv/publication.json
