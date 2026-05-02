@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "site": {
+    "id": "d45f89e2-3060-4091-b571-405c1f871192",
+    "name": "test-site-docs",
+    "slug": "test-site-docs"
+  },
+  "portal": {
+    "id": "99a78c4c-435d-48dc-9a02-bcbd498671ef",
+    "name": "test-portal",
+    "slug": "test-portal",
+    "url": "http://localhost:5173/p/test-portal"
+  },
+  "content": {
+    "docsSourcePath": "docs",
+    "staticSourcePath": null
+  },
+  "template": {
+    "id": "183c754b-a97d-4d45-a0fd-1523f4961c61",
+    "repository": "AlexAdiaconitei/docs-manager",
+    "ref": "main",
+    "path": "./templates/docusaurus",
+    "adapterKey": "docusaurus"
+  },
+  "publication": {
+    "title": "test-site-docs",
+    "siteUrl": "https://AlexAdiaconitei.github.io",
+    "basePath": "/test-site-docs/",
+    "autoPublishOnPush": false
+  }
+}
