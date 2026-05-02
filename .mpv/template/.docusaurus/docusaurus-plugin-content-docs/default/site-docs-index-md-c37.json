@@ -1,0 +1,17 @@
+{
+  "id": "index",
+  "title": "Inicio",
+  "description": "Esta página será reemplazada por el contenido neutral del Site durante el build de publicación.",
+  "source": "@site/docs/index.md",
+  "sourceDirName": ".",
+  "slug": "/",
+  "permalink": "/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Inicio"
+  },
+  "sidebar": "docs"
+}
