@@ -46,6 +46,11 @@ async function main() {
   if (manifest.adapterKey !== adapter.key) throw new Error(`Template adapter ${manifest.adapterKey} does not match publication adapter ${adapter.key}`);
 
   await adapter.materialize({ siteDir: process.cwd(), templateDir: templateRoot, manifest, publication });
+  process.env.DOCS_TITLE = publication.publication.title;
+  process.env.DOCS_SITE_URL = publication.publication.siteUrl;
+  process.env.DOCS_BASE_PATH = publication.publication.basePath;
+  process.env.DOCS_PORTAL_NAME = publication.portal.name;
+  process.env.DOCS_PORTAL_URL = publication.portal.url;
   run(manifest.build.installCommand ?? "npm ci", templateRoot);
   run(manifest.build.buildCommand ?? "npm run build", templateRoot);
 
