@@ -20,6 +20,7 @@
     "repository": "AlexAdiaconitei/docs-manager",
     "ref": "main",
     "path": "./templates/docusaurus",
+    "localPath": ".mpv/template",
     "adapterKey": "docusaurus"
   },
   "publication": {
