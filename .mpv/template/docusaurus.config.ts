@@ -13,6 +13,9 @@ const config: Config = {
   baseUrl: process.env.DOCS_BASE_PATH ?? "/",
   organizationName: process.env.DOCS_ORG_NAME ?? "mpv",
   projectName: process.env.DOCS_PROJECT_NAME ?? "docs",
+  future: {
+    v4: true,
+  },
   trailingSlash: true,
   onBrokenLinks: "warn",
   onBrokenMarkdownLinks: "warn",
